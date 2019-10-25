@@ -2,7 +2,7 @@
 
 ## Core Contributor
 
-[Mohamed Omar](https://github.com/redomar) &lt;mohamed12@live.co.uk&gt;
+[Mohamed Omar](https://github.com/redomar) 
 
 ## Contributors
 
