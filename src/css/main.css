@@ -1,0 +1,126 @@
+/* FONT IMPORT*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web:600,700&display=swap");
+
+/*--------------------
+  BODY
+----------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Titillium Web", "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family:  "Open Sans";
+}
+
+/*--------------------
+  HEADER
+----------------------*/
+
+header {
+  text-align: center;
+  background-color: #53bdca;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: white;
+  margin: 0;
+}
+
+#name-title {
+  background-color: #01224a;
+  /*EF7D42, 53BDCA, 93FFFF, C6EEF5*/
+  color: white;
+}
+
+/*--------------------
+  NAVINGATION
+----------------------*/
+
+nav {
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin:0;
+}
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: block;
+  }
+}
+
+nav li {
+  margin: 0 1em;
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #93FFFF;
+  padding: 0em;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #01224a;
+}
+
+.current-page {
+  border-bottom: 3px solid #93FFFF88;
+  padding: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.centre {
+  text-align: center;
+}
+
+.placeholder {
+  visibility: hidden;
+}
+
+#spacer {
+  margin-top: 3em;
+}
+
+hr {
+  border-top: 1px solid #53bdca;
+}
+
+#ongoing {
+  padding-left: 2em;
+  border-left: 1px solid #53bdca;
+}
+
+#welcome-banner {
+  padding: 3em 0;
+  background-color: #ffd5d5;
+}
+
+#profile {
+  width: 200px;
+  height: 200px;
+  margin: 3em auto;
+  border-radius: 50%;
+  background-image: url(../images/profile.jpg);
+  background-size: cover;
+}

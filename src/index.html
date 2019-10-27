@@ -10,25 +10,74 @@
     />
 
     <!--Temporarly using online css-->
-    <link
-      rel="stylesheet"
-      href="http://getskeleton.com/dist/css/normalize.css"
-    />
-    <link
-      rel="stylesheet"
-      href="http://getskeleton.com/dist/css/skeleton.css"
-    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Redomar Hub</title>
   </head>
   <body>
-    <h1>Welcome to the landing page for Mohamed Omar's Website</h1>
-    <h3>This website is a portfolio showcasing my software</h3>
-    <h4>Ongoing developments</h4>
-    <footer>
-      <p>v0.0.1</p>
+    <header class="container">
+      <div class="site-title">
+        <h1 id="name-title">REDOMAR HUB</h1>
+      </div>
+
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li><a href="" class="current-page">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="game.html">Games</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="subtitle">
+        Welcome to the landing page for Mohamed Omar's Website
+      </p>
+    </header>
+    <div class="container">
+      <div id="welcome-banner">
+        <div
+          src="images/profile.jpg"
+          alt="graduation photo of mohamed"
+          id="profile"
+        ></div>
+        <div class="centre">
+          <q class="italic" class="nine columns"
+            >A Biochemistry graduate with a passion for Software Engineering.</q
+          >
+        </div>
+      </div>
+      <div class="container" id="spacer">
+        <div class="row">
+          <div class="nine columns">
+            <span><p class="placeholder">placeholder</p></span>
+          </div>
+          <div class="three columns" id="ongoing">
+            <h6>Ongoing Developments</h6>
+            <ul>
+              <li>
+                <a href="https://github.com/redomar/frontend-redomar/"
+                  >Frontend Dev</a
+                >
+              </li>
+              <li>Devops</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <hr />
+      <a
+        class="button button"
+        target="_blank"
+        href="https://github.com/redomar/frontend-redomar/"
+      >
+        v0.0.1
+      </a>
     </footer>
   </body>
 </html>
