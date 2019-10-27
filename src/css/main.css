@@ -85,3 +85,42 @@ nav a:focus {
   border-bottom: 3px solid #93FFFF88;
   padding: 0;
 }
+
+.italic {
+  font-style: italic;
+}
+
+.centre {
+  text-align: center;
+}
+
+.placeholder {
+  visibility: hidden;
+}
+
+#spacer {
+  margin-top: 3em;
+}
+
+hr {
+  border-top: 1px solid #53bdca;
+}
+
+#ongoing {
+  padding-left: 2em;
+  border-left: 1px solid #53bdca;
+}
+
+#welcome-banner {
+  padding: 3em 0;
+  background-color: #ffd5d5;
+}
+
+#profile {
+  width: 200px;
+  height: 200px;
+  margin: 3em auto;
+  border-radius: 50%;
+  background-image: url(../images/profile.jpg);
+  background-size: cover;
+}

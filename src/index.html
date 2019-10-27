@@ -29,7 +29,7 @@
             <li><a href="" class="current-page">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Games</a></li>
+            <li><a href="game.html">Games</a></li>
           </ul>
         </nav>
       </div>
@@ -37,31 +37,40 @@
         Welcome to the landing page for Mohamed Omar's Website
       </p>
     </header>
-
     <div class="container">
-      <div class="row">
-        <div class="nine columns">
-          <h3>This website is a portfolio showcasing my software [WIP]</h3>
+      <div id="welcome-banner">
+        <div
+          src="images/profile.jpg"
+          alt="graduation photo of mohamed"
+          id="profile"
+        ></div>
+        <div class="centre">
+          <q class="italic" class="nine columns"
+            >A Biochemistry graduate with a passion for Software Engineering.</q
+          >
         </div>
-
-        <!--<div class="one-half column">
-        <img src="images/bgr.png" width="200%" alt="a picture of code" />
       </div>
-    </div>-->
-        <div class="three columns">
-          <h6>Ongoing Developments</h6>
-          <ul>
-            <li>
-              <a href="https://github.com/redomar/frontend-redomar/"
-                >Frontend Dev</a
-              >
-            </li>
-            <li>Devops</li>
-          </ul>
+      <div class="container" id="spacer">
+        <div class="row">
+          <div class="nine columns">
+            <span><p class="placeholder">placeholder</p></span>
+          </div>
+          <div class="three columns" id="ongoing">
+            <h6>Ongoing Developments</h6>
+            <ul>
+              <li>
+                <a href="https://github.com/redomar/frontend-redomar/"
+                  >Frontend Dev</a
+                >
+              </li>
+              <li>Devops</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <footer class="container">
+      <hr />
       <a
         class="button button"
         target="_blank"
@@ -69,7 +78,6 @@
       >
         v0.0.1
       </a>
-      <h6>built with HTML and CSS</h6>
     </footer>
   </body>
 </html>

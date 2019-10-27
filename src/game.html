@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Temporarly using online css-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Games</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="site-title">
+        <h1 id="name-title">REDOMAR HUB</h1>
+      </div>
+
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li><a href="index.html" class="current-page">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="">Games</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="subtitle">
+        PONG
+      </p>
+    </header>
+    <div id="game" class="container">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+      <script src="script/pong.js"></script>
+    </div>
+  </body>
+</html>
