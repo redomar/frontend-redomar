@@ -11,7 +11,11 @@ h1,h2,h3,h4,h5,h6 {
 
 body {
   background-color: #f8f8f8;
-  font-family:  "Open Sans";
+  font-family: "Open Sans";
+}
+
+hr {
+  border-top: 1px solid #53bdca;
 }
 
 /*--------------------
@@ -53,7 +57,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin:0;
+  margin: 0;
 }
 @media only screen and (max-width: 600px) {
   nav ul {
@@ -72,7 +76,7 @@ nav a {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: #93FFFF;
+  color: #93ffff;
   padding: 0em;
 }
 
@@ -82,7 +86,7 @@ nav a:focus {
 }
 
 .current-page {
-  border-bottom: 3px solid #93FFFF88;
+  border-bottom: 3px solid #93ffff88;
   padding: 0;
 }
 
@@ -98,12 +102,12 @@ nav a:focus {
   visibility: hidden;
 }
 
+/*--------------------
+  NAVINGATION
+----------------------*/
+
 #spacer {
   margin-top: 3em;
-}
-
-hr {
-  border-top: 1px solid #53bdca;
 }
 
 #ongoing {
