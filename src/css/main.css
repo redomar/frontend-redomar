@@ -252,3 +252,13 @@ nav a:focus {
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
+
+/*--------------------
+  BLOG SECTION
+----------------------*/
+
+#blog article{
+  background-color: #C6EEF5;
+  padding: 10px;
+  margin: 4% 0px;
+}
