@@ -5,7 +5,12 @@
   BODY
 ----------------------*/
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Titillium Web", "Open Sans", sans-serif;
 }
 
@@ -150,11 +155,11 @@ nav a:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  content: '';
+  content: "";
   background: inherit;
-  top:0;
-  left:0;
-  bottom:0;
+  top: 0;
+  left: 0;
+  bottom: 0;
   right: 0;
   transform-origin: top left;
   transform: skewY(-4deg);
@@ -184,12 +189,12 @@ nav a:focus {
   color: white;
   border-color: black;
   background: repeating-linear-gradient(
-  45deg,
-  #01224a,
-  #01224a 10px,
-  #000 10px,
-  #000 20px
-);
+    45deg,
+    #01224a,
+    #01224a 10px,
+    #000 10px,
+    #000 20px
+  );
   width: 15em;
 }
 
@@ -215,15 +220,17 @@ nav a:focus {
 ----------------------*/
 
 #technologies img {
-  width: 10%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 230px;
+  max-height: 95px;
 }
 
 #technologies {
   position: relative;
   width: 100%;
   height: 400px;
-  background-color: #C6EEF5;
+  background-color: #c6eef5;
   color: #01224a;
   width: 100%;
 }
@@ -232,18 +239,18 @@ nav a:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  content: '';
+  content: "";
   background: inherit;
-  top:0;
-  left:0;
-  bottom:0;
+  top: 0;
+  left: 0;
+  bottom: 0;
   right: 0;
   transform-origin: top right;
   transform: skewY(4deg);
   z-index: 0;
 }
 
-#technologies .container{
+#technologies .container {
   z-index: 1;
 }
 
@@ -257,8 +264,8 @@ nav a:focus {
   BLOG SECTION
 ----------------------*/
 
-#blog article{
-  background-color: #C6EEF5;
+#blog article {
+  background-color: #c6eef5;
   padding: 10px;
   margin: 4% 0px;
 }
