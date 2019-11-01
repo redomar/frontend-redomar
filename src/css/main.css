@@ -5,13 +5,26 @@
   BODY
 ----------------------*/
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Titillium Web", "Open Sans", sans-serif;
+}
+
+h2 {
+  text-decoration: underline;
 }
 
 body {
   background-color: #f8f8f8;
-  font-family:  "Open Sans";
+  font-family: "Open Sans";
+}
+
+hr {
+  border-top: 1px solid #53bdca;
 }
 
 /*--------------------
@@ -53,7 +66,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin:0;
+  margin: 0;
 }
 @media only screen and (max-width: 600px) {
   nav ul {
@@ -72,7 +85,7 @@ nav a {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: #93FFFF;
+  color: #93ffff;
   padding: 0em;
 }
 
@@ -82,7 +95,7 @@ nav a:focus {
 }
 
 .current-page {
-  border-bottom: 3px solid #93FFFF88;
+  border-bottom: 3px solid #93ffff88;
   padding: 0;
 }
 
@@ -98,22 +111,23 @@ nav a:focus {
   visibility: hidden;
 }
 
+/*--------------------
+  NAVINGATION
+----------------------*/
+/*
 #spacer {
   margin-top: 3em;
 }
-
-hr {
-  border-top: 1px solid #53bdca;
-}
-
+*/
 #ongoing {
   padding-left: 2em;
-  border-left: 1px solid #53bdca;
+  border-left: 1px solid #01224a;
 }
 
 #welcome-banner {
-  padding: 3em 0;
+  padding: 6em 0;
   background-color: #ffd5d5;
+  margin-bottom: 0px;
 }
 
 #profile {
@@ -123,4 +137,135 @@ hr {
   border-radius: 50%;
   background-image: url(../images/profile.jpg);
   background-size: cover;
+}
+
+/*--------------------
+  SLANTED SECTION
+----------------------*/
+
+#slanted {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #53bdca;
+  color: #01224a;
+}
+
+#slanted:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: top left;
+  transform: skewY(-4deg);
+  z-index: 0;
+}
+
+#slanted .container {
+  padding-top: 3em;
+  z-index: 1;
+}
+
+#slanted .button:hover {
+  color: white;
+  background: black;
+  border-color: black;
+  width: 15em;
+}
+
+#slanted .button-primary {
+  color: white;
+  background: #01224a;
+  border-color: black;
+  width: 15em;
+}
+
+#slanted .inactive {
+  color: white;
+  border-color: black;
+  background: repeating-linear-gradient(
+    45deg,
+    #01224a,
+    #01224a 10px,
+    #000 10px,
+    #000 20px
+  );
+  width: 15em;
+}
+
+@media only screen and (max-width: 600px) {
+  #slanted ul {
+    display: block;
+    width: 50%;
+  }
+
+  #slanted {
+    padding-bottom: 10em;
+  }
+
+  #ongoing {
+    margin-left: 60px;
+    padding-top: 30px;
+    border-left: none;
+  }
+}
+
+/*--------------------
+  TECHNOLOGIES SECTION
+----------------------*/
+
+#technologies img {
+  width: auto;
+  height: auto;
+  max-width: 230px;
+  max-height: 95px;
+}
+
+#technologies {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #c6eef5;
+  color: #01224a;
+  width: 100%;
+}
+
+#technologies:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: top right;
+  transform: skewY(4deg);
+  z-index: 0;
+}
+
+#technologies .container {
+  z-index: 1;
+}
+
+#greyscale {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/*--------------------
+  BLOG SECTION
+----------------------*/
+
+#blog article {
+  background-color: #c6eef5;
+  padding: 10px;
+  margin: 4% 0px;
 }
