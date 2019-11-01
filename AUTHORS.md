@@ -2,8 +2,10 @@
 
 ## Core Contributor
 
-[Mohamed Omar](https://github.com/redomar) 
+[Mohamed Omar](https://github.com/redomar)
 
 ## Contributors
 
-None yet. [Why not be the first?](CONTRIBUTING.md)
+[Samson Yuwono](https://github.com/samsonyuwono)
+
+[Why not be the next?](CONTRIBUTING.md)
