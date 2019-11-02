@@ -7,6 +7,7 @@ const port = 3000
 
 // Import Routes
 const authRoute = require('./routes/auth')
+const postsRoute = require('./routes/posts')
 
 // Lookup environment variables
 env.config()
@@ -23,5 +24,6 @@ app.use(express.json())
 
 // Route Middlewears
 app.use('/api/user', authRoute)
+app.use('/api/posts', postsRoute)
 
 app.listen(port, () => console.log(`Server runneing ${port}`))
