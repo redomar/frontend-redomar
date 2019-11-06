@@ -2,6 +2,7 @@ const router = require('express').Router()
 const User = require('../models/user')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const verify = require('../controllers/verifyToken')
 const { registerValidation, loginValidation } = require('../models/validation')
 
 // Route register
@@ -37,6 +38,12 @@ router.post('/register', async (req, res) => {
   } catch (error) {
     res.statusCode(400).send(error)
   }
+})
+
+// Show users lists -- [DEBUG-ONLY] !MUST REMOVE BEOFRE LAUNCH!
+router.get('/list', verify, async (req, res) => {
+  users = await User.find({}, { _id: 0, name: 1, email: 1 })
+  res.send(users)
 })
 
 // Login
