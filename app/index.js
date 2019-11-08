@@ -20,6 +20,7 @@ mongoose.connect(
 )
 
 // Middlewears
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 // Route Middlewears

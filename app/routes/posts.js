@@ -63,4 +63,45 @@ router.post('/new', verify, async (req, res) => {
   }
 })
 
+// Search for post via title /MUST BE EXACT/
+router.get('/search/:title', verify, async (req, res) => {
+  try {
+    const findPost = await Post.findOne({ title: req.params.title })
+    if (findPost == null) throw `<b>Post Not found:</b> ${req.params.title}`
+    res.send(findPost)
+    console.log(findPost)
+  } catch (error) {
+    res.status(400).send(error)
+  }
+})
+
+// Delete post
+router.get('/delete/:postId', verify, async (req, res) => {
+  try {
+    const deletePost = await Post.findById(req.params.postId)
+    await Post.remove({
+      _id: req.params.postId
+    })
+    res.send(deletePost)
+  } catch (error) {
+    res.status(400).send(`<h1> ${error.message} <h1/>`)
+  }
+})
+
+// Update post by ID
+router.get('/update/:postId/:change', verify, async (req, res) => {
+  try {
+    await Post.update(
+      {
+        _id: req.params.postId
+      },
+      { $set: { title: req.params.change } }
+    )
+    const updatedPost = await Post.findById(req.params.postId)
+    res.send(updatedPost)
+  } catch (error) {
+    res.status(400).send(`<h1> ${error.message} <h1/>`)
+  }
+})
+
 module.exports = router
