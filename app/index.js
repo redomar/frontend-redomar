@@ -20,10 +20,11 @@ mongoose.connect(
 )
 
 // Middlewears
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 // Route Middlewears
 app.use('/api/user', authRoute)
 app.use('/api/posts', postsRoute)
 
-app.listen(port, () => console.log(`Server runneing ${port}`))
+app.listen(port, () => console.log(`Server running ${port}`))
