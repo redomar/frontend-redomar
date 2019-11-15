@@ -26,14 +26,16 @@ const fetchItems = async () => {
 
 // Throw Lorem Ipsum into DOM
 const dummyText = () => {
-  let selection = document.getElementById('blog')
-  let newArticle = document.createElement('article')
-  newArticle.setAttribute('id', 'art' + 'ipsom')
-  selection.appendChild(
-    newArticle
-  ).innerHTML = `<h3>Post 1</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem libero commodi quis nisi facilis eaque veniam. Veritatis atque, tempore dolorem, pariatur adipisci ab debitis explicabo soluta ullam quaerat dicta.</p><p>Necessitatibus, hic? Asperiores maiores voluptate deleniti natus similique, itaque odit dolore eum totam numquam odio mollitia sapiente optio nostrum, obcaecati alias eligendi, maxime quidem fugiat? Nostrum ut repellat laudantium ducimus?</p>
+  for (let i = 1; i <= 3; i++) {
+    let selection = document.getElementById('blog')
+    let newArticle = document.createElement('article')
+    newArticle.setAttribute('id', 'art' + 'ipsom')
+    selection.appendChild(
+      newArticle
+    ).innerHTML = `<h3>Post ${i}</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem libero commodi quis nisi facilis eaque veniam. Veritatis atque, tempore dolorem, pariatur adipisci ab debitis explicabo soluta ullam quaerat dicta.</p><p>Necessitatibus, hic? Asperiores maiores voluptate deleniti natus similique, itaque odit dolore eum totam numquam odio mollitia sapiente optio nostrum, obcaecati alias eligendi, maxime quidem fugiat? Nostrum ut repellat laudantium ducimus?</p>
     <span class="date"><p>01/01/20</p>
     <span class="username"><p>name</p></span>`
+  }
   document.getElementById('server-fail').hidden = false
 }
 
