@@ -1,5 +1,12 @@
 # Change Log
 
+### Update 0.0.5
+
+- Removed nodeJS to keep front/back seperate
+- Added posts from database to blog page -- experimental
+- Added dark theme to Game page
+- CSS cleanup
+
 ### Update 0.0.4
 
 - nodeJS initiated and added package dependancies
