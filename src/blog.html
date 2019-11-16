@@ -41,59 +41,22 @@
         </div>
       </div>
     </div>
+    <script src="./script/app.js"></script>
 
     <div id="slanted" style="box-sizing: content-box; height:100% ">
       <div class="container" id="blog">
-        <article>
-          <div>
-            <h3>Post 1</h3>
-            <span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae autem libero commodi quis nisi facilis eaque veniam.
-                Veritatis atque, tempore dolorem, pariatur adipisci ab debitis
-                explicabo soluta ullam quaerat dicta.
-              </p>
-              <p>
-                Necessitatibus, hic? Asperiores maiores voluptate deleniti natus
-                similique, itaque odit dolore eum totam numquam odio mollitia
-                sapiente optio nostrum, obcaecati alias eligendi, maxime quidem
-                fugiat? Nostrum ut repellat laudantium ducimus?
-              </p>
-            </span>
-            <span class="date">
-              <p>01/01/20</p>
-            </span>
-            <span class="username">
-              <p>name</p>
-            </span>
-          </div>
-        </article>
-        <article>
-          <div>
-            <h3>Post 2</h3>
-            <span>
-              <p>
-                Soluta numquam qui nobis tempore iste provident recusandae dicta
-                eum delectus. Neque dicta obcaecati saepe exercitationem illo
-                dolorum, tempora quo delectus amet impedit enim debitis eveniet
-                hic explicabo veritatis ab?
-              </p>
-              <p>
-                Delectus ipsum ipsa soluta aspernatur adipisci excepturi porro
-                tempora voluptatem eligendi molestiae, labore consequatur
-                consectetur molestias sed ab harum? Aspernatur quo incidunt
-                deleniti temporibus modi in similique velit provident unde!
-              </p>
-            </span>
-            <span class="date">
-              <p>01/01/20</p>
-            </span>
-            <span class="username">
-              <p>name</p>
-            </span>
-          </div>
-        </article>
+        <h4
+          style="background-color: #db7093;
+          background: repeating-linear-gradient(135deg, #dd0,#dd0 10px, #ee0 10px, #ee0 20px );
+          padding-left:1em;
+          border: 1px dashed black;
+          border-radius: 4px;
+          font-weight: 800;"
+          id="server-fail"
+          hidden="true"
+        >
+          Server Offline: Backend Issues
+        </h4>
       </div>
     </div>
     <footer class="container">
@@ -102,7 +65,10 @@
         target="_blank"
         href="https://github.com/redomar/frontend-redomar/"
       >
-        v0.0.4
+        <script src="./script/version.js"></script>
+        <script>
+          printVersion();
+        </script>
       </a>
     </footer>
   </body>

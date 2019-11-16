@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Immersion CSS-->
+    <style>
+      body {
+        background: #444;
+      }
+    </style>
     <title>Games</title>
   </head>
   <body>
@@ -18,8 +24,7 @@
         <nav>
           <ul>
             <li><a href="index.html" class="current-page">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="">Games</a></li>
           </ul>
         </nav>
@@ -38,7 +43,10 @@
         target="_blank"
         href="https://github.com/redomar/frontend-redomar/"
       >
-        v0.0.4
+        <script src="./script/version.js"></script>
+        <script>
+          printVersion();
+        </script>
       </a>
     </footer>
   </body>

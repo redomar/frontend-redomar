@@ -264,8 +264,31 @@ nav a:focus {
   BLOG SECTION
 ----------------------*/
 
+#blog {
+  background-color: lightblue;
+  padding: 0px 10px;
+  border-radius: 20px;
+}
+
 #blog article {
   background-color: #c6eef5;
   padding: 10px;
   margin: 4% 0px;
+  border-radius: 10px;
+}
+
+#slanted {
+  padding-bottom: 1em;
+}
+
+footer a {
+  margin-top: 1em;
+}
+
+.vsc-initialized {
+  background-color: #01224a;
+}
+
+.vsc-initialized .button {
+  color: wheat;
 }
