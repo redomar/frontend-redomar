@@ -26,7 +26,7 @@ a {
 
 /* The side navigation menu */
 .sidenav {
-  height: 0; /* 100% Full-height */
+  height: 0px; /* 100% Full-height */
   width: 100%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -200,6 +200,27 @@ ol {
   margin-bottom: 0px;
 }
 
+#projects {
+  font-size: xx-large;
+}
+
+#php {
+  padding-top: 5px;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  background-color: black;
+  color: white;
+}
+
+#coffee {
+  padding: 6px 1px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  filter: invert(100%);
+}
 #education {
   background-color: #222;
   color: white;

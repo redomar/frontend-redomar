@@ -4,5 +4,5 @@ function openNav () {
 
 /* Set the width of the side navigation to 0 */
 function closeNav () {
-  document.getElementById('mySidenav').style.height = '0'
+  document.getElementById('mySidenav').style.height = '0px'
 }
