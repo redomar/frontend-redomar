@@ -1,124 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <link
-      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
-      rel="stylesheet"
-      type="text/css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>New Design</title>
+  <link rel="stylesheet" href="css/new.css" />
+  <script src="script/animated-menu.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/particles.js@2/particles.min.js"></script>
+  <script src="script/particles.js"></script>-->
+</head>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/main.css" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Redomar Hub</title>
-  </head>
-  <body>
-    <header>
-      <div class="site-title">
-        <h1 id="name-title">REDOMAR HUB</h1>
-      </div>
-
-      <div class="navigation">
-        <nav>
-          <ul>
-            <li><a href="" class="current-page">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="game.html">Games</a></li>
-          </ul>
-        </nav>
-      </div>
-      <p class="subtitle">
-        Welcome to the landing page for Mohamed Omar's Website
-      </p>
-    </header>
-    <div>
-      <div id="welcome-banner">
-        <div
-          src="images/profile.jpg"
-          alt="graduation photo of mohamed"
-          id="profile"
-        ></div>
-        <div class="centre">
-          <q class="italic"
-            >A Biochemistry graduate with a passion for Software Engineering.</q
-          >
+<body>
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="" class="current-page">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="game.html">Games</a>
+  </nav>
+  <span id="fix" onclick="openNav()"><img src="images/menu-1.svg" alt="menu"></span>
+  <main id="main">
+    <div class="socials">
+      <ul>
+        <li id="s-github"><a href="https://github.com/redomar" target="_blank"><img src="images/github-1.svg"
+              alt="github logo">
+            <div>GitHub</div>
+          </a></li>
+        <li id="s-linkedin"><a href="https://linkedin.com/in/redomar" target="_blank"><img src="images/linkedin-3.svg"
+              alt="LinkedIn logo">
+            <div>LinkedIn</div>
+          </a></li>
+        <li id="s-twitter"><a href="https://twitter.com/mohamedomaru" target="_blank"><img src="images/twitter-1.svg"
+              alt="Twitter logo">
+            <div>Twitter</div>
+          </a></li>
+        <li id="s-instagram"><a href="https://instagram.com/mohamed.omaru" target="_blank"><img
+              src="images/instagram-11.svg" alt="Instagram logo">
+            <div>Instagram</div>
+          </a></li>
+      </ul>
+    </div>
+    <section class="content-homepage">
+      <div id='intro'>
+        <div src="images/profile.jpg" alt="graduation photo of mohamed" id="profile"></div>
+        <h2>Mohamed Omar</h2>
+        <div class="sub">
+          <span id="location"><img src="images/location-1.svg" alt="location"> Birmingham, United Kingdom</span>
+        </div>
+        <div class="sub" id="subquote">
+          <sub><img src="images/quote-1.svg" alt="location"> My objective in life is to learn, and also to benefit
+            people.
+            My long-term goal is to gain experience in computer science so I can do research in the field of
+            Bioinformatics.
+            This brings my curiosity of computer science and the new area of biology that utilises big data.</sub>
         </div>
       </div>
-    </div>
-    <div>
-      <div id="slanted">
-        <div class="container" id="spacer">
-          <div class="row">
-            <div class="nine columns">
-              <h2>More about me</h2>
-              <p>
-                24 Years old & Live in the UK, I have enjoyed programming ever
-                since 2012 with my first time making a website with php.
-              </p>
-              <span class="center">
-                <a
-                  class="button button-primary"
-                  target="_blank"
-                  href="https://twitter.com/mohamedomaru"
-                  >twitter</a
-                >
-                <a
-                  class="button button-primary"
-                  target="_blank"
-                  href="https://github.com/redomar"
-                  >github</a
-                >
-              </span>
-            </div>
-            <div class="three columns" id="ongoing">
-              <h6>Ongoing Developments</h6>
-              <ul style="list-style-type: none;">
-                <li>
-                  <a
-                    class="button button-primary"
-                    target="_blank"
-                    href="https://github.com/redomar/frontend-redomar/"
-                    >Frontend Dev</a
-                  >
-                  <a
-                    class="button button-primary"
-                    target="_blank"
-                    href="https://github.com/redomar/backend-redomar/"
-                    >API/Server Dev</a
-                  >
-                </li>
-                <li class="button inactive">Devops</li>
-                <li class="button inactive">Linux</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div>
+        <h1 id="title">Freelance Software Developer</h1>
+        <h3 id="commitment">What I can do for you</h3>
+        <ol id="client">
+          <li>Build robust websites and software</li>
+          <li>Tutoring High-School or Sixth Form with:
+            <ul>
+              <li>Biology,</li>
+              <li>Chemistry, or</li>
+              <li>ICT</li>
+            </ul>
+
+          </li>
+        </ol>
+        <h2>My skills</h2>
+        <ul id="skills">
+          <li>&#x1F468&#x1F3FE&#x200D&#x1F52C Biochemist</li>
+          <li>&#x1F468&#x1F3FE&#x200D&#x1F4BB Software Engineer</li>
+          <li>&#x1F468&#x1F3FE&#x200D&#x1F393 Mentor</li>
+          <li>&#x1F4F7 Photographer</li>
+          <li>&#x1F3AE Hobbyist</li>
+        </ul>
       </div>
-    </div>
-    <section id="technologies">
-      <div class="container">
-        <h2>Used technologies</h2>
-        <img src="images/html5-black.svg" alt="html5 logo" />
-        <img src="images/github-mark.png" alt="github logo" />
-        <img src="images/docker-moby.png" alt="docker logo" id="greyscale" />
-        <img src="images/jenkins_logo.svg" alt="docker logo" id="greyscale" />
+      <div id="education">
+        <h3>Education</h3>
+
+        <table id="education-table">
+          <tr>
+            <td>&#x1F9EC Biochemistry BSc (Hons) Degree</td>
+            <td>University of Liverpool</td>
+            <td>2015-2019</td>
+          </tr>
+          <tr>
+            <td>&#x1F52C BTEC Applied Science Diploma </td>
+            <td>Birmingham, UK</td>
+            <td>2013-2015</td>
+          </tr>
+          <tr>
+            <td>&#x2328&#xFE0F BTEC Software Engineering Diploma</td>
+            <td>Birmingham, UK</td>
+            <td>2011-2013</td>
+          </tr>
+          <tr>
+            <td>&#x1F4DA High School</td>
+            <td>Birmingham, UK</td>
+            <td>2006-2011</td>
+          </tr>
+        </table>
       </div>
     </section>
-    <footer class="container">
-      <a
-        class="button button"
-        target="_blank"
-        href="https://github.com/redomar/frontend-redomar/"
-      >
-        <script src="./script/version.js"></script>
-        <script>
-          printVersion();
-        </script>
-      </a>
+    <!--<div id="particles-js"></div>-->
+    <span class="copyleft" style="font-family: 'Noto', sans-serif; display: none;">2020&#x1f12f Mohamed Omar</span>
+    <footer>
+      <script src="./script/version.js"></script>
+      <script>
+        printVersion();
+      </script>
     </footer>
-  </body>
+  </main>
+</body>
+
 </html>
