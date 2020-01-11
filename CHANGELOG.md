@@ -1,5 +1,12 @@
 # Change Log
 
+### Update 0.0.6
+
+- New Minimalist Homepage Layout and Content
+- With Animated Menus
+- Added project list to homepage
+- Finally also removed remnants of nodeJS
+
 ### Update 0.0.5
 
 - Removed nodeJS to keep front/back seperate
