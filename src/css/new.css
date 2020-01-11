@@ -1,0 +1,229 @@
+/* FONT IMPORT*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web:600,700&display=swap");
+
+/*--------------------
+  BODY
+----------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web", "Open Sans", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 0px; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  font-family: monospace;
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: inline-flex;
+  align-items: flex-end;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  font-size: 36px;
+  margin-left: 0px;
+}
+
+#fix {
+  position: fixed;
+  padding: 10px;
+}
+.socials ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin: 0px;
+}
+
+.socials ul li {
+  display: inline-flex;
+  margin: 0px;
+  padding: 10px;
+}
+
+.socials a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.socials a div {
+  margin-left: 0.5em;
+  color: #333;
+  border-bottom: 2px solid transparent;
+}
+
+.socials a div:hover {
+  margin-left: 0.5em;
+  color: #000;
+  border-bottom: 2px solid black;
+}
+
+.socials img {
+  width: 25px;
+  height: 25px;
+}
+
+#profile {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 3em;
+  border-radius: 50%;
+  background-image: url(../images/profile.jpg);
+  background-position-x: -10px;
+  background-size: 160px;
+}
+
+ul,
+table {
+  list-style: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+ol {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.content-homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-homepage div {
+  margin-bottom: 1em;
+}
+
+.content-homepage div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#location {
+  display: inline-flex;
+  align-items: center;
+}
+
+#intro span {
+  font-size: large;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+#intro #subquote {
+  font-size: large;
+  width: 70%;
+  font-family: serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#title {
+  margin: 0px;
+  font-size: 2.2em;
+}
+
+#skills {
+  margin-top: 0px;
+  font-size: xx-large;
+}
+
+#client {
+  display: block;
+  font-size: large;
+}
+
+#client li {
+  padding: 0.25em;
+}
+
+#client li ul {
+  padding: 0.25em;
+}
+
+#client li ul li {
+  padding-left: 2em;
+  font-weight: 300;
+}
+
+#commitment {
+  margin-bottom: 0px;
+}
+
+#projects {
+  font-size: xx-large;
+}
+
+#php {
+  padding-top: 5px;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  background-color: black;
+  color: white;
+}
+
+#coffee {
+  padding: 6px 1px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  filter: invert(100%);
+}
+#education {
+  background-color: #222;
+  color: white;
+  padding-bottom: 1em;
+  margin-bottom: 0px;
+}
