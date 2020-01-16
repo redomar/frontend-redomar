@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/blog-view.css" />
+    <title>New Post</title>
+
+</head>
+
+<body>
+    <iframe src="navigation.html" frameborder="0" width="device-width" height="200px">
+    </iframe>
+
+    <main class="container" id="card">
+        <h3>Create New Blog Post</h3>
+
+        <form action="http://redomar.co.uk:3300/api/posts/new" method="post">
+            <div class="row">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" />
+                </div>
+                <div>
+                    <label for="title">Title</label>
+                    <input class="u-full-width" type="text" name="title" />
+                </div>
+            </div>
+            <label for="content">Blog Message</label>
+            <textarea class="u-full-width" name="content"></textarea>
+            <input class="button-primary" type="submit" value="Submit"  />
+        </form>
+    </main>
+
+</body>
+
+</html>
