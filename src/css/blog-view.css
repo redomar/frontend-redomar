@@ -1,0 +1,29 @@
+iframe {
+  width: 1px;
+  min-width: 100%;
+  z-index: 300;
+}
+
+#card {
+  margin-top: -120px;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 2em;
+  background-color: #fffafa;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 3em;
+}
+
+#grey {
+  color: #555;
+  text-shadow: 2px 2px #eee;
+}
+
+.centre {
+  display: flex;
+  z-index: -1;
+  align-items: center;
+  justify-content: center;
+}
