@@ -16,11 +16,14 @@ const fetchItems = async () => {
     let selection = document.getElementById('blog')
     let newArticle = document.createElement('article')
     newArticle.setAttribute('id', 'art' + i)
-    selection.appendChild(
-      newArticle
-    ).innerHTML = `<h3>${items[i].title}</h3><p>${items[i].content}</p><span class="date">
-    <p>${items[i].date}</p><span class="username">
-    <p>${items[i].username}</p></span>`
+    selection.appendChild(newArticle).innerHTML = `<h3>${
+      items[i].title
+    }</h3><p>${items[i].content}</p><span class="date">
+    <p>${new Date(items[i].date)}</p><span class="username">
+    <p>${items[i].username}</p>
+    [<a href="http://redomar.co.uk:3300/api/posts/delete/${
+      items[i]._id
+    }">Delete</a>]</span>`
   }
 }
 
@@ -37,6 +40,7 @@ const dummyText = () => {
     <span class="username"><p>name</p></span>`
   }
   document.getElementById('server-fail').hidden = false
+  document.getElementById('new-btn').hidden = true
 }
 
 fetchItems()
