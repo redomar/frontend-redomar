@@ -19,11 +19,15 @@ const fetchItems = async () => {
     selection.appendChild(newArticle).innerHTML = `<h3>${
       items[i].title
     }</h3><p>${items[i].content}</p><span class="date">
-    <p>${new Date(items[i].date)}</p><span class="username">
+    <p>${new Date(items[i].date).toLocaleString('en-GB', {
+      timeZone: 'Europe/London',
+      dateStyle: 'medium',
+      timeStyle: 'short'
+    })}</p><span class="username">
     <p>${items[i].username}</p>
-    [<a href="http://redomar.co.uk:3300/api/posts/delete/${
+    <a class="button btn-del" href="http://redomar.co.uk:3300/api/posts/delete/${
       items[i]._id
-    }">Delete</a>]</span>`
+    }">Delete</a></span>`
   }
 }
 
