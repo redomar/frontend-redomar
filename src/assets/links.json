@@ -1,0 +1,20 @@
+{
+  "links": [
+    {
+      "name": "home",
+      "link": "index.html"
+    },
+    {
+      "name": "blog",
+      "link": "blog.html"
+    },
+    {
+      "name": "chess",
+      "link": "chess.html"
+    },
+    {
+      "name": "pong",
+      "link": "game.html"
+    }
+  ]
+}
