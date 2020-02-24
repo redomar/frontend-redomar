@@ -4,6 +4,8 @@ function openNav () {
     document.getElementById('mySidenav').style.height = '50px'
     document.getElementById('mySidenav').style.flexDirection = 'row'
   } else {
+    document.getElementById('mySidenav').parentElement.style.height = '200px'
+    document.getElementById('mySidenav').style.position = 'absolute'
     document.getElementById('mySidenav').style.height = '200px'
     document.getElementById('mySidenav').style.alignItems = 'center'
     document.getElementById('mySidenav').style.flexDirection = 'column'

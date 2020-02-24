@@ -23,17 +23,21 @@ async function getChessStats () {
  *  after respose it will use chart.js to draw a doughnut chart
  */
 ;(async () => {
-  stats = await getChessStats()
-  score = stats.chess_blitz.last
-  scoreRecord = stats.chess_blitz.record
-  scoreRecord = [scoreRecord.loss, scoreRecord.draw, scoreRecord.win]
+  const stats = await getChessStats()
+  const score = stats.chess_blitz.last
+  let scoreRecord = Object.values(stats.chess_blitz.record)
 
-  chartStats(...scoreRecord)
+  // Array shift left by 1
+  scoreRecord = scoreRecord.concat(scoreRecord.splice(0, 1))
+
+  chartStats(scoreRecord)
+
   scoredDate = new Date(score.date * 1000).toLocaleString('en-GB', {
     timeZone: 'Europe/London',
     dateStyle: 'full',
     timeStyle: 'short'
   })
+
   let selection = document.getElementById('chess')
   let newArticle = document.createElement('article')
   selection.appendChild(
@@ -42,15 +46,15 @@ async function getChessStats () {
 })()
 
 //  Function that renders chart.js
-function chartStats (loss, draw, win) {
+function chartStats (record) {
   var ctx = document.getElementById('scoreChart').getContext('2d')
   var scoreChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: [`Loss: ${loss}`, `Draw: ${draw}`, `Win: ${win}`],
+      labels: [`Loss`, `Draw`, `Win`],
       datasets: [
         {
-          data: [loss, draw, win],
+          data: [...record],
           backgroundColor: [
             'rgba(255, 99, 132, 0.8)',
             'rgba(192, 192, 192, 0.8)',
