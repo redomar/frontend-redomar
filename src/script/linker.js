@@ -7,7 +7,7 @@ let link_list = []
 
 // Function to collect json data
 const getLinks = async () => {
-  await fetch('/src/assets/links.json')
+  await fetch('/assets/links.json')
     .then(res => {
       return res.json()
     })
