@@ -1,5 +1,5 @@
 /* FONT IMPORT*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web:600,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web:600,700&display=swap');
 
 /*--------------------
   BODY
@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Titillium Web", "Open Sans", sans-serif;
+  font-family: 'Titillium Web', 'Open Sans', sans-serif;
 }
 
 body {
@@ -121,6 +121,7 @@ a {
   margin: 0 auto;
   margin-top: 3em;
   border-radius: 50%;
+  border: 3px solid #70b1f1;
   background-image: url(../images/profile.jpg);
   background-position-x: -10px;
   background-size: 160px;
@@ -156,6 +157,10 @@ ol {
 #location {
   display: inline-flex;
   align-items: center;
+}
+
+#intro {
+  color: black;
 }
 
 #intro span {
