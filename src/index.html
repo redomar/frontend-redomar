@@ -7,21 +7,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Mohamed Omar.</title>
   <link rel="stylesheet" href="css/new.css" />
-  <script src="script/animated-menu.js"></script>
-  <!--<script src="https://cdn.jsdelivr.net/npm/particles.js@2/particles.min.js"></script>
-  <script src="script/particles.js"></script>-->
+  <link rel="stylesheet" href="css/particles.css" />
+  <link rel="stylesheet" href="css/blog-view.css" />
+  <script src="script/animated-menu.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2/particles.min.js" defer></script>
+  <script src="script/particles.js" defer></script>
+  <script src="script/linker.js" defer></script>
 </head>
 
 <body>
-  <nav id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="" class="current-page">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="game.html">Games</a>
-  </nav>
-  <span id="fix" onclick="openNav()"><img src="images/menu-1.svg" alt="menu"></span>
+
   <main id="main">
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </nav>
+    <span id="fix" onclick="openNav()">
+      <img src="images/menu-1.svg" alt="menu" /></span>
+    <div id="particles-js"></div>
     <div class="socials">
+
       <ul>
         <li id="s-github"><a href="https://github.com/redomar" target="_blank"><img src="images/github-1.svg"
               alt="github logo">
@@ -44,12 +48,12 @@
     <section class="content-homepage">
       <div id='intro'>
         <div src="images/profile.jpg" alt="graduation photo of mohamed" id="profile"></div>
-        <h2>Mohamed Omar</h2>
+        <h2 id="full-name">Mohamed Omar</h2>
         <div class="sub">
           <span id="location"><img src="images/location-1.svg" alt="location"> Birmingham, United Kingdom</span>
         </div>
         <div class="sub" id="subquote">
-          <sub><img src="images/quote-1.svg" alt="location"> My objective in life is to learn, and also to benefit
+          <sub><img src="images/quote-1.svg" alt="quote"> My objective in life is to learn, and also to benefit
             people.
             My long-term goal is to gain experience in computer science so I can do research in the field of
             Bioinformatics.
@@ -83,22 +87,22 @@
         <h3>Previous projects</h3>
         <table>
           <tr>
-            <td id="coffee"><img src="images/coffee-1.svg" ></td>
+            <td id="coffee"><img src="images/coffee-1.svg"></td>
             <td><a href="https://github.com/redomar/javagame" target="_blank">JavaGame</a></td>
             <td>2013</td>
           </tr>
           <tr>
-            <td id="php"><span >PHP</span></td>
+            <td id="php"><span>PHP</span></td>
             <td>PhP Stack</td>
             <td>2012</td>
           </tr>
           <tr>
-            <td id="php"><span >&#x200E JS</span></td>
+            <td id="php"><span>&#x200E JS</span></td>
             <td>JS Backend</td>
             <td>2019</td>
           </tr>
           <tr>
-            <td id="php"><span >&#x200E PY</span></td>
+            <td id="php"><span>&#x200E PY</span></td>
             <td>Python Backend</td>
             <td>2020</td>
           </tr>
@@ -126,7 +130,6 @@
         </table>
       </div>
     </section>
-    <!--<div id="particles-js"></div>-->
     <span class="copyleft" style="font-family: 'Noto', sans-serif; display: none;">2020&#x1f12f Mohamed Omar</span>
     <footer>
       <script src="./script/version.js"></script>
@@ -134,7 +137,7 @@
         printVersion();
       </script>
     </footer>
-  </main>
 </body>
+</main>
 
 </html>

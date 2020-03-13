@@ -1,5 +1,13 @@
 # Change Log
 
+### Update 0.0.7
+
+- Added animated Particles to homepage background
+- Improved CSS for menus
+- Iterated on Design
+- New design to blog page
+- Chess stats page added
+
 ### Update 0.0.6
 
 - New Minimalist Homepage Layout and Content

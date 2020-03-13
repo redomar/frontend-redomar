@@ -1,0 +1,50 @@
+@import url("new.css");
+@import url("blog-view.css");
+
+#welcome-banner {
+  margin-top: 2em;
+  position: relative;
+  z-index: -2;
+}
+
+sub {
+  margin-bottom: 3em;
+  font-style: italic;
+  font-family: serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.button-primary {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-del {
+  padding: 0px 10px;
+  margin-bottom: 1em;
+  float: right;
+}
+
+.btn-del:hover {
+  background-color: #ff9393;
+  border: 1px solid red;
+}
+
+#blog article {
+  background-color: #fffafa;
+  padding: 0px 10px;
+  margin: 20px auto;
+  border-radius: 3px;
+  border: 1px solid #ffd0d0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  overflow: auto;
+}
+
+#blog article h3 {
+  border-bottom: 1px solid pink;
+}
+
+#blog article p {
+  margin-bottom: 10px;
+}

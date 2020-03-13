@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <script src="script/animated-menu.js"></script>
+    <script src="./script/linker.js" defer></script>
+    <base target="_parent">
+    <style>
+      body{
+        z-index: 2;
+        position: relative;
+      }
+      .sidenav {
+        height: 0px;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 0px;
+        transition: 0.5s;
+        font-family: monospace;
+        display: inline-flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: inline-flex;
+        align-items: flex-end;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: -4px;
+        left: 10px;
+        font-size: 36px;
+        margin-left: 0px;
+      }
+
+      #fix {
+        position: fixed;
+        padding: 10px;
+      }
+
+
+.socials ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin: 0px;
+}
+
+.socials ul li {
+  display: inline-flex;
+  margin: 0px;
+  padding: 10px;
+}
+
+.socials a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.socials a div {
+  margin-left: 0.5em;
+  color: #333;
+  border-bottom: 2px solid transparent;
+}
+
+.socials a div:hover {
+  margin-left: 0.5em;
+  color: #000;
+  border-bottom: 2px solid black;
+}
+
+.socials img {
+  width: 25px;
+  height: 25px;
+}
+
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul,
+table {
+  list-style: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+body{
+  margin: 0px;
+}
+    </style>
+    <title>Create new Post</title>
+
+    <script type="text/javascript">
+      !function(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){
+      (a[e].o=a[e].o||[]).push(arguments)},f=b.createElement(c),g=b.getElementsByTagName(c)[0],
+      f.async=1,f.src=d,g.parentNode.insertBefore(f,g),h=a.onerror,a.onerror=function(b,c,d,f,g){
+      h&&h(b,c,d,f,g),g||(g=new Error(b)),a[e].q=a[e].q||[],a[e].q.push({
+      e:g})}}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4js");
+    </script>
+
+    <script type="text/javascript" defer>
+      rg4js('apiKey', 'lQeov3Au4bjjHUDSbl4nhg');
+      rg4js('enablePulse', true);
+    </script>
+
+  </head>
+
+  <body>
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </nav>
+    <span id="fix" onclick="openNav()">
+        <img src="images/menu-1.svg" alt="menu"
+    /></span>
+    <div id="particles-js"></div>
+    <div class="socials">
+      
+        <ul>
+          <li id="s-github"><a href="https://github.com/redomar" target="_blank"><img src="images/github-1.svg"
+                alt="github logo">
+              <div>GitHub</div>
+            </a></li>
+          <li id="s-linkedin"><a href="https://linkedin.com/in/redomar" target="_blank"><img src="images/linkedin-3.svg"
+                alt="LinkedIn logo">
+              <div>LinkedIn</div>
+            </a></li>
+          <li id="s-twitter"><a href="https://twitter.com/mohamedomaru" target="_blank"><img src="images/twitter-1.svg"
+                alt="Twitter logo">
+              <div>Twitter</div>
+            </a></li>
+          <li id="s-instagram"><a href="https://instagram.com/mohamed.omaru" target="_blank"><img
+                src="images/instagram-11.svg" alt="Instagram logo">
+              <div>Instagram</div>
+            </a></li>
+        </ul>
+      </div>
+  </body>
+</html>

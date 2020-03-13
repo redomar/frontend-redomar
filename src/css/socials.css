@@ -1,0 +1,39 @@
+.socials ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin: 0px;
+}
+
+.socials ul li {
+  display: inline-flex;
+  margin: 0px;
+  padding: 10px;
+}
+
+.socials a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.socials a div {
+  margin-left: 0.5em;
+  color: #333;
+  border-bottom: 2px solid transparent;
+}
+
+.socials a div:hover {
+  margin-left: 0.5em;
+  color: #000;
+  border-bottom: 2px solid black;
+}
+
+.socials img {
+  width: 25px;
+  height: 25px;
+}
