@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/blog.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Redomar Blog</title>
-  </head>
-  <body>
-    <iframe src="navigation.html" frameborder="0" width="device-width" height="200px"></iframe>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/socials.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <script src="script/animated-menu.js" defer></script>
+  <script src="script/linker.js" defer></script>
+  <script src="script/socials.js"></script>
 
-    <div id="welcome-banner">
-      <div class="container">
-        <h1>Welcome to the Redomar Blogs</h1>
-        <div class="centre">
-          <sub><img src="images/quote-1.svg" alt="quote">A Series of questionable posts.</sub>
-        </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redomar Blog</title>
+</head>
+
+<body>
+  <header>
+    <div class="main">
+      <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </nav>
+      <span id="fix" onclick="openNav()">
+        <img src="images/menu-1.svg" alt="menu" /></span>
+      <div id="particles-js"></div>
+      <div class="socials">
+        <script>printSocials();</script>
+      </div>
+  </header>
+  <div id="welcome-banner">
+    <div class="container">
+      <h1>Welcome to the Redomar Blogs</h1>
+      <div class="centre">
+        <sub><img src="images/quote-1.svg" alt="quote">A Series of questionable posts.</sub>
       </div>
     </div>
-    <script src="./script/blog.js"></script>
-    
-    <div id="slanted" style="box-sizing: content-box; height:100% ">
-      <div class="container" id="blog">
-        <span id="new-btn"><a class="button button-primary u-full-width"  href="newblog.html" style="margin-bottom: 0px;">New Blog Post</a>
-        </span><h4
-          style="background-color: #db7093;
+  </div>
+  <script src="./script/blog.js"></script>
+
+  <div id="slanted" style="box-sizing: content-box; height:100% ">
+    <div class="container" id="blog">
+      <span id="new-btn"><a class="button button-primary u-full-width" href="newblog.html"
+          style="margin-bottom: 0px;">New Blog Post</a>
+      </span>
+      <h4 style="background-color: #db7093;
           background: repeating-linear-gradient(135deg, #dd0,#dd0 10px, #ee0 10px, #ee0 20px );
           padding-left:1em;
           border: 1px dashed black;
           border-radius: 4px;
-          font-weight: 800;"
-          id="server-fail"
-          hidden="true"
-        >
-          Server Offline: Backend Issues
-        </h4>
-      </div>
+          font-weight: 800;" id="server-fail" hidden="true">
+        Server Offline: Backend Issues
+      </h4>
     </div>
-    <footer class="container">
-      <a
-        class="button button"
-        target="_blank"
-        href="https://github.com/redomar/frontend-redomar/"
-      >
-        <script src="./script/version.js"></script>
-        <script>
-          printVersion();
-        </script>
-      </a>
-    </footer>
-  </body>
+  </div>
+  <footer class="container">
+    <a class="button button" target="_blank" href="https://github.com/redomar/frontend-redomar/">
+      <script src="./script/version.js"></script>
+      <script>
+        printVersion();
+      </script>
+    </a>
+  </footer>
+</body>
+
 </html>

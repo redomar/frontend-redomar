@@ -2,7 +2,7 @@
 @import url("blog-view.css");
 
 #welcome-banner {
-  margin-top: -6em;
+  margin-top: 2em;
   position: relative;
   z-index: -2;
 }

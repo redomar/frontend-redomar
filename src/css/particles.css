@@ -1,5 +1,6 @@
 #particles-js {
   background-color: #3380cc;
+  border-bottom: 5px solid lightskyblue;
   position: absolute;
   margin-left: auto;
   margin-top: 3em;
