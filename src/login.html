@@ -7,12 +7,28 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/blog-view.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <script src="script/jwt-handler.js" defer></script>
+    <script src="script/animated-menu.js" defer></script>
+    <script src="script/linker.js" defer></script>
+    <script src="script/socials.js"></script>
      <title>login</title>
 </head>
 <body>
-    <iframe src="./navigation.html" frameborder="0" height="200px"></iframe>
-
-    <div class="centre">
+    <header>
+        <div class="main">
+          <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          </nav>
+          <span id="fix" onclick="openNav()">
+            <img src="images/menu-1.svg" alt="menu" /></span>
+          <div id="particles-js"></div>
+          <div class="socials">
+            <script>printSocials();</script>
+          </div>
+      </header>
+    <div class="centre" id='login'>
         <main id="card">
             <h3>Login</h3>
             <form action="http://redomar.co.uk:3300/api/user/login" method="POST">
