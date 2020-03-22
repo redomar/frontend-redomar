@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/blog-view.css">
-    <link rel="stylesheet" href="css/new.css">
-    <link rel="stylesheet" href="css/socials.css">
-    <script src="script/jwt-handler.js" defer></script>
-    <script src="script/animated-menu.js" defer></script>
-    <script src="script/linker.js" defer></script>
-    <script src="script/socials.js"></script>
-     <title>login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/blog-view.css">
+  <link rel="stylesheet" href="css/new.css">
+  <link rel="stylesheet" href="css/socials.css">
+  <script src="script/jwt-handler.js" defer></script>
+  <script src="script/animated-menu.js" defer></script>
+  <script src="script/linker.js" defer></script>
+  <script src="script/socials.js"></script>
+  <title>login</title>
 </head>
+
 <body>
-    <header>
-        <div class="main">
-          <nav id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          </nav>
-          <span id="fix" onclick="openNav()">
-            <img src="images/menu-1.svg" alt="menu" /></span>
-          <div id="particles-js"></div>
-          <div class="socials">
-            <script>printSocials();</script>
-          </div>
-      </header>
-    <div class="centre" id='login'>
-        <main id="card">
-            <h3>Login</h3>
-            <form action="http://redomar.co.uk:3300/api/user/login" method="POST">
-                <div>
-                    <label for="emai">Email</label>
-                    <input type="text" name="email"/>
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password"/>
-                </div>
-                <input class="button-primary" type="submit" value="Submit" disabled>
-            </form>
-        </main>
+  <header>
+    <div class="main">
+      <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </nav>
+      <span id="fix" onclick="openNav()">
+        <img src="images/menu-1.svg" alt="menu" /></span>
+      <div id="particles-js"></div>
+      <div class="socials">
+        <script>printSocials();</script>
+      </div>
+  </header>
+  <div class="centre" id='login'>
+    <main id="card">
+      <h3>Login</h3>
+      <form class="input" id='form' action="POST">
+      <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
     </div>
-</body>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+    </div>
+    <div id="error"></div>
+    <button class="button-primary" type="submit" onclick="submitInfo()">Submit</button>
+</form>
+    </main>
+  </div>
+</body><!--
+<div class="input">
+  <label for="username">user name:</label>
+  <input id="username">
+  <label for="password">password:</label>
+  <input id="password">
+  <button onclick="getToken()">login</button>
+</div>
+<div id="token"></div>
+<button onclick="getSecret()">get secret message</button>
+<div id="result"></div>
+<script src="jwt-vanilla.js"></script>-->
 </html>
