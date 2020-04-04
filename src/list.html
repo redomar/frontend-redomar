@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <script>
+
+        if(!localStorage.getItem('TOKEN')){
+            throw new Error("LOGIN!")
+        }
+
+        const myHeaders = new Headers()
+        myHeaders.append('Content-Type', 'application/json')
+        myHeaders.append('auth_TOKEN', localStorage.getItem('TOKEN'))
+
+        fetch('http://redomar.co.uk:3300/api/user/list', {
+            method: 'GET',
+            headers: myHeaders,
+            mode: 'cors',
+            cache: 'default'
+        })
+            .then(json => json.json())
+            .then(data => {
+                console.log(data)
+                data.forEach(d => {
+
+                    let para = document.getElementById("data")
+                    let newcontent = document.createElement('div')
+
+                    newcontent.innerHTML = `<b>${d.name}</b>: ${d.email} <br/>`
+                    while (newcontent.firstChild) {
+                        para.appendChild(newcontent.firstChild)
+                    }
+                })
+            })
+    </script>
+</head>
+
+<body>
+    <div id="data"></div>
+</body>
+
+</html>

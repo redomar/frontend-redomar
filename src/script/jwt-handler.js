@@ -65,6 +65,8 @@ function submitInfo () {
     .then(json)
     .then(data => {
       console.log(data)
+      localStorage.setItem('TOKEN', data)
+      window.location.replace('list.html')
     })
     .catch(error => {
       console.log('Request failed', error)
